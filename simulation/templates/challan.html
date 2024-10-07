@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challan Receipt</title>
+    <link rel="stylesheet" type="text/css" href="/static/challan.css">
+
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Challan Receipt</h1>
+        <p>Seatbelt Violation Notice</p>
+    </div>
+
+    <div class="details">
+        <h2>Receipt Information</h2>
+        
+
+        <h3>User Details</h3>
+        <table>
+            
+            <tr>
+                <th>Mobile Number:</th>
+                <td><strong>{{ mobile_number }}</strong></td>
+            </tr>
+            <tr>
+                <th>Chassis Number:</th>
+                <td><strong>{{ chassis_number }}</strong></td>
+            </tr>
+        </table>
+
+        <h2>Violation Details</h2>
+        <table>
+            <tr>
+                <th>Violation:</th>
+                <td>Seatbelt Not Worn</td>
+            </tr>
+            
+            <tr>
+                <th>Fine Amount:</th>
+                <td><strong>₹{{ fine }}</strong></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="footer">
+        <p>Thank you for your cooperation. Drive safely!</p>
+        <p><strong>S Ajay Kumar</strong></p>
+    </div>
+</div>
+
+</body>
+</html>
